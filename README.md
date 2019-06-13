@@ -6,7 +6,7 @@ to quickly bootstrap your angular webapp projects and dev environment for these 
 
 ## Getting Started
 
-To get you started you can simply clone the repository and install the dependencies
+To get you started you can simply clone the repository and install the dependencies and run the app
 
 ### Prerequisites
 
