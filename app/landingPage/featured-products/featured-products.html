@@ -1,0 +1,75 @@
+
+
+<h1 class="featuredTitle">Featured products</h1>
+
+<div class="productsContainer" layout="row"  layout-align="center">
+  
+  <div flex="70" layout="column" layout-align="center">
+    <div class="greyContainer" flex layout="row" layout-align="center" layout-padding>
+      <div flex layout="column" layout-align="center" layout-margin>
+        <div class="type">
+          {{$ctrl.products[0].type}}
+        </div>
+        <div class="product">
+          {{$ctrl.products[0].product}}
+        </div>
+        <div layout="row" layout-align="space-between center">
+          <md-button class="md-fab md-primary" aria-label="Use Android" ng-click="$ctrl.addProduct($ctrl.products[0])"> 
+              <ng-md-icon icon="shopping_cart" style="fill:white" size="24"></ng-md-icon>
+          </md-button>
+          <md-button class="md-fab md-primary" aria-label="Use Android" ng-click="$ctrl.addLike($ctrl.products[0])"> 
+              <ng-md-icon icon="favorite" style="fill:white" size="24"></ng-md-icon>
+          </md-button>
+          <div class="product">${{$ctrl.products[0].price}}</div>
+        </div>
+      </div>
+      <div flex class="picture" ng-style="{'background-image':'url({{$ctrl.products[0].img}})'}">
+        
+      </div>
+      
+    </div>
+    <div class="yellowContainer" flex layout="row" layout-align="center" layout-padding>
+      <div flex layout="column" layout-align="center" layout-margin>
+        <div class="type">
+          {{$ctrl.products[1].type}}
+        </div>
+        <div class="product">
+          {{$ctrl.products[1].product}}  
+        </div>
+        <div layout="row" layout-align="space-between center">
+          <md-button class="md-fab md-primary" aria-label="Use Android" ng-click="$ctrl.addProduct($ctrl.products[1])"> 
+              <ng-md-icon icon="shopping_cart" style="fill:white" size="24"></ng-md-icon>
+          </md-button>
+          <md-button class="md-fab md-primary" aria-label="Use Android" ng-click="$ctrl.addLike($ctrl.products[1])"> 
+              <ng-md-icon icon="favorite" style="fill:white" size="24"></ng-md-icon>
+          </md-button>
+          <div class="product">${{$ctrl.products[1].price}}</div>
+        </div>
+      </div>
+      <div flex class="picture" ng-style="{'background-image':'url({{$ctrl.products[1].img}})'}">
+        
+      </div>
+    </div>
+    
+  </div>
+  <div ng-hide="$ctrl.isMobile" class="blueContainer" flex="30" layout="column" layout-align="center" layout-padding>
+    <div flex class="picture" ng-style="{'background-image':'url({{$ctrl.products[2].img}})'}">
+        
+    </div>
+    <div class="type">
+      {{$ctrl.products[2].type}}
+    </div>
+    <div class="product">
+      {{$ctrl.products[2].product}}
+    </div>
+    <div layout="row" layout-align="space-between center">
+      <md-button class="md-fab md-primary" aria-label="Use Android" ng-click="$ctrl.addProduct($ctrl.products[2])"> 
+          <ng-md-icon icon="shopping_cart" style="fill:white" size="24"></ng-md-icon>
+      </md-button>
+      <md-button class="md-fab md-primary" aria-label="Use Android" ng-click="$ctrl.addLike($ctrl.products[2])"> 
+          <ng-md-icon icon="favorite" style="fill:white" size="24"></ng-md-icon>
+      </md-button>
+      <div class="product"> ${{$ctrl.products[2].price}}</div>
+    </div>
+  </div>
+</div>

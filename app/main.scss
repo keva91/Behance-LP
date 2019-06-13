@@ -1,0 +1,351 @@
+
+//  -----------------------------------   GLOBAL ----------------------------------- 
+
+
+.moreInfoButton{
+	border-radius: 50px;
+    background: #fc3a52;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 11px 40px;
+    cursor: pointer;
+    box-shadow:1px 1px 30px 2px #0000005c;
+}
+
+
+//  -----------------------------------   HEADER ----------------------------------- 
+.header{
+
+	display: flex;
+    flex-direction: row;
+    //justify-content: space-around;
+    align-items: center;
+    color: white;
+    background:black;
+    //padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 22;
+    top: 0;
+
+    div{
+    	padding: 2vw;
+    	border-right: 1px solid #565656cc;
+    }
+
+	.search{
+		ng-md-icon{
+			cursor: pointer;
+			outline: none;
+		}
+
+		display: flex;
+		flex-direction: row;
+	}
+
+	.title{
+		flex:1;
+		text-align: center;
+	    font-size: calc(1em + 0.5vw);
+	    font-family: serif;
+	}
+
+	.like{
+
+	}
+	.shopping{
+
+	}
+
+	.searchInput {
+
+	    transition: all ease-in 0.5s;
+	    padding: 0;
+	    border:0;
+	    width: 13vw;
+	    opacity: 1;
+	    margin-left: 12px;
+	  	
+	  	input{
+	  		background: black;
+		    border: none;
+		    border-bottom: 1px solid white;
+		    color: white;
+		    width: 100%;
+		    outline: none;
+
+	  	} 
+
+	  	&.ng-hide {
+		  width:0;
+		  opacity: 0;
+		  margin:0;
+		}
+	}
+
+	
+}
+
+
+
+
+//  -----------------------------------   SLIDESHOW ----------------------------------- 
+
+slideshow{
+	
+	.swiper-container{
+		height: 55vw;
+		margin-top: 6vw;
+	}
+
+
+	.swiper-button-next,.swiper-button-prev{
+		border: 1px solid grey;
+	    border-radius: 270px;
+	    width: 50px;
+	    height: 50px;
+	    background-size: 13px 16px;	
+	}
+
+	.swiper-slide{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+
+		&.slide1{
+			background-image: url('assets/slide1.jpg');
+			background-size: 100%;
+			background-repeat:no-repeat;
+
+		}
+		&.slide2{
+			background-image: url('assets/slide2.jpg');
+			background-size: 100%;
+			background-repeat:no-repeat;
+
+			.content{
+				div{
+		    	    left: -27%;
+	    			//width: 221px;
+		   		}
+			}
+
+			p{
+				//width: 208px;
+			}
+		}
+
+		.content{
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    width: 100%;
+		    height: 100%;
+		    position: relative;
+		    background: #00000040;
+		    text-shadow: 1px 1px 16px #00000094;
+
+		    div{
+	    	    position: relative;
+			    left: 22%;
+			    width: 50%;
+			    text-align: center;
+		    }
+		}
+
+		p{
+			font-size: 6vw;
+		    color: white;
+		    font-family: sans-serif;
+		    text-align: center;
+		    display: flex;
+		    margin: 10px;
+		    font-weight: bold;
+		    margin-bottom: 40px;
+		}
+
+	}
+}
+
+
+
+//  -----------------------------------  DESCRIPTION ----------------------------------- 
+
+description{
+
+	.description-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		//height: 26vw;
+    	padding: 9vw 8vw;
+
+		.description{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: start;
+			flex:1;
+
+			.description-title{
+				font-size:calc(1em + 2vw);
+			}
+			.description-content{
+				font-size: calc(1em + 0.5vw);
+				margin-bottom: 30px;
+			}
+		}
+
+
+		.pictures{
+			flex:1;
+			position:relative;
+
+
+			.fourche{
+				width: 250px;
+			    height: 250px;
+			    position: absolute;
+			    left: 20%;
+			    z-index: 10;
+			    top: 40%;
+			    background-image: url(assets/fourche1.jpg);
+			    box-shadow: 1px 1px 47px 21px #a8a8a836;
+			    border-radius: 8px;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+
+			.frein{
+				width: 250px;
+			    height: 250px;
+			    opacity: 0.5;
+			    position: relative;
+			    left: 42%;
+			    top: 12%;
+			    box-shadow: 1px 1px 26px 21px #a8a8a836;
+			    background-image: url(assets/frein.png);
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+
+		}
+		
+	}
+
+	
+}
+
+
+//  -----------------------------------   FEATURED PRODUCTS ----------------------------------- 
+.productsContainer{
+
+	.type{
+		font-weight: normal;
+    	font-size: calc(1em + 0.5vw);
+	}
+	.product{
+		font-weight: normal;
+    	font-size: calc(1em + 1vw);
+	}
+
+	.picture{
+		background-size: contain;
+    	background-repeat: no-repeat; 
+    	background-position: center;
+	}
+
+	.greyContainer{
+		background: #63686c;
+		color: white;
+		padding: 25px 50px;
+	}
+
+	.blueContainer{
+		background: #2e3140;
+		color: white;
+	}
+
+	.yellowContainer{
+		background: #fab54e;
+		padding: 25px 50px;
+	}
+
+}
+
+.featuredTitle{
+	text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+
+//  -----------------------------------   FOOTER  ----------------------------------- 
+
+.footerContainer{
+	background-color:#222222;
+	color:#585858;
+
+	a{
+		color:#585858;
+	}
+	
+}
+
+
+//  -----------------------------------   MEDIA QUERIES  ----------------------------------- 
+
+
+@media screen and (max-width: 600px){
+
+   
+   .header{
+
+	   	.menu > span{
+	   		display: none;
+	   	}
+   }
+
+   slideshow {
+	   	.swiper-container{
+	   		margin-top: 11vw;
+	   	}
+	}
+
+
+   .description-container{
+
+		height: auto;
+	}
+
+
+
+
+	div.productsContainer{
+		flex-direction: column;
+
+		&>div{
+			max-width: 100%!important; 
+		}
+
+		.picture{
+			max-width: 40%;
+		}
+
+		.yellowContainer,.greyContainer{
+			padding: 25px 10px;
+		}
+	}
+
+	div.footerContainer{
+		.content{
+			display: none;
+		}
+	}
+
+}

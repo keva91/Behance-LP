@@ -1,0 +1,33 @@
+<div class="header" >
+
+	<div class="search" ng-cloak >
+		<ng-md-icon icon="search" style="fill:white" size="36" ng-click="searchToggle = !searchToggle"></ng-md-icon>
+		<div class="searchInput" ng-hide="!searchToggle">
+			<input  type="text"  name="search" placeholder="Search">
+		</div> 
+	</div>
+	<div class="menu">
+		<ng-md-icon icon="menu" style="fill:white" size="36"></ng-md-icon> 
+		<span>shop category	</span> 	
+	</div>
+
+	<div class="title">
+		Bicycle company
+	</div>
+	<div class="profile">
+		<ng-md-icon icon="person" style="fill:white" size="36"></ng-md-icon>	
+	</div>
+	<div class="like">
+		<ng-md-icon icon="favorite" style="fill:white" size="36"></ng-md-icon>
+		<span>{{likes.length}}</span>	
+	</div>
+
+	<div class="shopping">
+		<ng-md-icon icon="shopping_cart" style="fill:white" size="36"></ng-md-icon> 
+		<span>{{articles.length}}</span>	
+	</div>
+	
+
+
+</div>
+
