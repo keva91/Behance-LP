@@ -1,6 +1,6 @@
 # `Bicycle-LP` 
 
-This project is based on the Angular-seed application skeleton. For a typical [AngularJS][angularjs] web app. You can use it
+This project is based on the Angular-seed application skeleton. For a typical web app. You can use it
 to quickly bootstrap your angular webapp projects and dev environment for these projects.
 
 
@@ -18,7 +18,7 @@ Clone the `Bicycle-LP` repository using git:
 
 ```
 git clone https://github.com/keva91/Bicycle-LP.git
-cd angular-seed
+cd Bicycle-LP
 ```
 
 
