@@ -1,6 +1,6 @@
-# `angular-seed` — the seed for AngularJS apps
+# `Bicycle-LP` 
 
-This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
+This project is based on the Angular-seed application skeleton. For a typical [AngularJS][angularjs] web app. You can use it
 to quickly bootstrap your angular webapp projects and dev environment for these projects.
 
 
@@ -10,17 +10,14 @@ To get you started you can simply clone the repository and install the dependenc
 
 ### Prerequisites
 
-You need git to clone the `angular-seed` repository.
-
-We also use a number of Node.js tools to initialize and test `angular-seed`. You must have Node.js
-and its package manager (npm) installed. 
+You must have Node.js and its package manager (npm) installed. 
 
 ### Clone The App
 
-Clone the `angular-seed` repository using git:
+Clone the `Bicycle-LP` repository using git:
 
 ```
-git clone https://github.com/angular/angular-seed.git
+git clone https://github.com/keva91/Bicycle-LP.git
 cd angular-seed
 ```
 
