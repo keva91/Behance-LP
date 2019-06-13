@@ -12,7 +12,7 @@ To get you started you can simply clone the repository and install the dependenc
 
 You must have Node.js and its package manager (npm) installed. 
 
-### Clone The App
+### Clone the repository 
 
 Clone the `Bicycle-LP` repository using git:
 
